@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS links-->
+    <link rel="stylesheet" href="style-creator.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Ayo Maca: Website Perpustakaan Digital</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <link rel="icon" href="favicon (1).ico" type="image/x-icon">
+
+    <!--Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="banner">
+        
+         <!--Navigation Bar-->
+         <div class="navbar">
+            <img src="elemen/logo-black.png" class="logo">
+            <ul>
+                <li><a href="1-home-page.html" class="home" style="color: #ffffff;">Home</a></li>
+                <li class="navbar-value"><a href="7-login-page.html" >Login</a></li>
+                <li class="navbar-value"><a href="2-about-page.html">About</a></li>
+                <li class="navbar-value"><a href="3-creator-page.html">Creators</a></li>
+            </ul>
+        </div>
+
+        <!-- Mob Navbar -->
+        <nav class="mob-nav" >
+          <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <li><a href="1-home-page.html">Home</a></li>
+              <li class="navbar-value"><a href="7-login-page.html" >Login</a></li>
+              <li class="navbar-value"><a href="2-about-page.html">About</a></li>
+              <li class="navbar-value"><a href="3-creator-page.html">Creators</a></li>
+            </div>
+          
+            <span style="font-size:30px;cursor:pointer;padding:1em;padding-top: 4em;color: #542c7b ;" onclick="openNav()">&#9776; </span>          
+        </nav>
+
+        <div class="title">
+          <h1>CREATORS</h1>
+        </div>
+        <div class="card-top">
+            <div class="card">
+                <img src="banner/banner-5.png" class="banner-card banner-card-1" style="padding-bottom: 4em;">
+                <div class="person-img-container">
+                  <img src="elemen/person-2.jpg" class="person-image">
+                </div>
+                <div class="content">
+                  <h2>Pembuat Website</h2>
+                  <p>Ardiva Arya Diandra</p>
+                  <ul style="text-align: left; list-style-type: none; padding: 20px 25px;">
+                    <li>1. Pembuat website Keris (Kuliner Pelajar Intra Smansawi)</li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="banner/banner-5.png" class="banner-card">
+                <div class="person-img-container">
+                  <img src="elemen/person-2.jpg" class="person-image">
+                </div>
+                <div class="content">
+                  <h2>Pembuat Website</h2>
+                  <p style="padding: 0 1em;">Muhammad Rantawan Kusuma</p>
+                  <ul style="text-align: left; list-style-type: none; padding: 20px 25px;">
+                    <li>1. Duta Lingkungan Hidup</li>
+                    <li>2. Duta Anti Bullying</li>
+                    <li>3. Konselor Kesehatan Remaja</li>
+                    <li>4. Juara 2 Enviromental Challange</li>
+                    <li>5. Tervavorit dan Teraktif Social Youth Inovation</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="banner-footer">
+            <div class="container-footer">
+                <div class="logo-sosmed-footer">
+                  <img src="elemen/Logo.png" alt="logo-image">
+                  <div class="sosmed-footer">
+                    <ul>
+                      <li><a href="#"><i data-feather="facebook"></i></a></li>
+                      <li><a href="#"><i data-feather="instagram"></i></a></li>
+                      <li><a href="#"><i data-feather="twitter"></i></a></li>
+                      <li><a href="#"><i data-feather="youtube"></i></a></li>   
+                    </ul>
+                  </div>
+                </div>
+                <div class="produk-footer">
+                  <h2>PRODUK</h2>
+                  <ul>
+                    <li>Buku Nonfiksi</li>
+                    <li>Buku Fiksi</li>
+                    <li>Majalah</li>
+                    <li>Berita</li>
+                  </ul>
+                </div>
+                <div class="sosial-media-footer">
+                  <h2>SOSIAL MEDIA</h2>
+                  <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+                </div>
+                <div class="ayo-maca-footer">
+                  <h2>AYO MACA</h2>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Goals</a></li>
+                    <li><a href="#">How to Use It?</a></li>
+                    <li><a href="#">Creators</a></li>
+                    <li><a href="#">Testimoni</li>
+                  </ul>
+                </div>
+            </div>
+          -->
+    </div>
+    <script>
+        feather.replace();
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.banner{
+    background-image: url(banner/banner-6.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.navbar-value::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ffffff ;
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.home{
+    background-color: #5C3A92;
+    padding: 4px 7px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.home:hover{
+    background-color: #beacff;
+    color: white;
+}
+.title{
+    text-align: center;
+    color: white;
+    font-size: 7vh;
+    padding: 0 5%;
+    padding-bottom: 30px;
+    letter-spacing: 5px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 0 10%;
+}
+.card{
+    text-align: center;
+    padding-top: 1em;
+}
+.card img{
+    width: 200px;
+    border-radius: 30px;
+    border: 10px solid white;
+}
+.card h1{
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+.card img:hover{
+    transition: 0.5s;
+    filter: brightness(0.8);
+    transform: translatey(-15px);
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.footer ul{
+    max-width: 640px;
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.footer ul li{
+    list-style: none;
+}
+.copyright{
+    font-style: italic;
+    color:#5C3A92;
+    margin-left:13px;
+}
+.footer ul li a{
+    padding: 20px;
+    color: #5C3A92;
+}
+.icon-sosmed ul li a:hover{
+    color: #beacff;
+}
+
+/*Laptop*/
+@media screen and (min-width:1023px){
+    .mob-nav{
+        display: none;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    .mob-nav{
+        display: none;
+    }
+}
+
+/*HandPhone*/
+@media screen and (max-width:767px){
+    .navbar{
+        display: none;
+    }
+
+    .content-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar ul li::after{
+        background-color: white;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #542c7b;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+}
