@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.banner{
+    width: 100%;
+    background-image: url(banner/banner-3.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 3;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.navbar-value::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ffffff ;
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.home{
+    background-color: #ffffff;
+    padding: 4px 7px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.home:hover{
+    background-color: #beacff;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 13vh;
+    letter-spacing: 5px;
+    color: white;
+    margin: 0 40%;
+    border-bottom: 3px solid #ffffff;
+}
+.header span{
+    padding-right: 20px;
+    color: #e0d8ff;
+}
+
+
+@keyframes buku {
+    0%{top: 0;}
+    100%{top: 20px;}
+}
+
+.content-2 .value-1 {
+    padding-left: 5%;
+}
+.content-3 .value-1 p{
+    text-align: end;
+}
+.content-3 .value-1 h2{
+    text-align: end;
+    padding-right: 10%;
+}
+.value-1 h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.value-1 span{
+    color: #5C3A92;
+}
+.value-1 p{
+    font-size: 20px;
+    margin-top: 7%;
+    letter-spacing: 1px;
+    margin-right: 10%;
+}
+.banner-footer{
+    background: linear-gradient(#5C3A92, #371d64) ;
+    background-color: var(--purple);
+    margin-top: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2% 20px;
+}
+.logo-sosmed-footer img{
+    width: 300px;
+}
+.logo-sosmed-footer ul {
+    display: flex;
+}
+.logo-sosmed-footer ul li{
+    padding-left: 8%;
+    list-style-type: none;
+}
+.logo-sosmed-footer ul li a{
+    color: white;
+}
+.produk-footer h2{
+    color: white;
+    letter-spacing: 3px;
+}
+.produk-footer ul li{
+    list-style-type: none;
+    padding-top: 10%;
+    padding-left: 6%;
+    color: white;
+}
+.sosial-media-footer h2{
+    color: white;
+    letter-spacing: 3px;
+}
+.sosial-media-footer ul li{
+    list-style-type: none;
+    padding-top: 8%;
+    padding-left: 6%;
+}
+.sosial-media-footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+.ayo-maca-footer h2{
+    color: white;
+    letter-spacing: 2px;
+}
+.ayo-maca-footer ul li{
+    list-style-type: none;
+    padding-top: 8%;
+    padding-left: 6%;
+}
+.ayo-maca-footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+.logo-sosmed-footer ul li a:hover{
+    color: #FFDE59 ;
+}
+.produk-footer ul li a:hover{
+    color: #beacff;
+}
+.sosial-media-footer ul li a:hover{
+    color: #beacff;
+}
+.ayo-maca-footer ul li a:hover{
+    color: #beacff;
+}
+
+@media screen and (min-width:1023px){
+    .banner{
+        height: 400vh;
+    }
+    .mob-nav{
+        display: none;
+    }
+    .container{
+        margin: 0 15%;
+        margin-top: 28em;
+    }
+
+    .content-1{
+        display: flex;
+        align-items: center;
+        padding: 5% 0;
+    }
+    
+    .img-atas{
+        display: none;
+    }
+    .buku{
+        margin: auto;
+    }
+}
+/*Tablet*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    .banner{
+        height: 560vh;
+    }
+    .mob-nav{
+        display: none;
+    }
+    .container{
+        margin: 0 15%;
+        margin-top: 30em;
+    }
+    .content-1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5% 0;
+    }
+    .img-bawah{
+        display: none;
+    }
+    .buku{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:767px){
+    .banner{
+        height: 640vh;
+        position: relative;
+        top: -45em;
+        
+    }
+    .navbar{
+        display: none;
+    }
+    .mob-nav{
+        position: relative;
+        top: 50em;
+    }
+    .buku-cont{
+        position: relative;
+        top: 50em;
+    }
+    .header{
+        position: relative;
+        top: 13em;
+    }
+    .content-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .navbar ul li::after{
+        background-color: white;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #542c7b;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      .buku{
+        width: 100%;
+      }
+
+      .header{
+        font-size: 4em;
+      }
+    .container{
+        margin: 0 15%;
+        margin-top: 80em;
+    }
+    .content-1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5% 0;
+    }
+    .img-bawah{
+        display: none;
+    }
+    .banner-footer{
+        position: relative;
+        height: 50em;
+    }
+
+}

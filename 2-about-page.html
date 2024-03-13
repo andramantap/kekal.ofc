@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS links-->
+    <link rel="stylesheet" href="style-about.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Ayo Maca: Website Perpustakaan Digital</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <link rel="icon" href="favicon (1).ico" type="image/x-icon">
+
+    <!--Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body style="background-color: #E3E3E3;">
+    <div class="banner">
+
+        <!--Navigation Bar-->
+        <div class="navbar">
+            <img src="elemen/Logo.png" class="logo">
+            <ul>
+                <li><a href="1-home-page.html" class="home" style="color: #5c3a92;">Home</a></li>
+                <li class="navbar-value"><a href="7-login-page.html" >Login</a></li>
+                <li class="navbar-value"><a href="2-about-page.html">About</a></li>
+                <li class="navbar-value"><a href="3-creator-page.html">Creators</a></li>
+            </ul>
+        </div>
+
+        <!-- Mob Navbar -->
+        <nav class="mob-nav">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="1-home-page.html">Home</a></li>
+                <li><a href="2-about-page.html">About</a></li>
+                <li class="navbar-value"><a href="7-login-page.html" >Login</a></li>
+                <li><a href="3-creator-page.html">Creators</a></li>
+              </div>
+            
+              <span style="font-size:30px;cursor:pointer;padding:1em;padding-top: 4em;color: aliceblue;" onclick="openNav()">&#9776; </span>          
+        </nav>
+
+        <!--Content-->
+        <div class="buku-cont" style="display: flex;">
+          <img src="elemen/buku-home.png" class="buku">
+        </div>
+        <h1 class="header"><span>About</span> Us?</h1>
+        <div class="container">
+            <div class="content-1 content-2">
+                <img src="elemen/team-icon.png" style="width: 20em;">
+                <div class="value-1">
+                    <h2>Apa Itu <span>KEKAL?</span></h2>
+                    <p>
+                        Halo Semua!
+                        KEKAL mau kenalan dulu nih.
+                        KEKAL(Kenalan Karo Tegal) merupakan website literasi yang berisi mengenai cerita rakyat, toponimi, sejarah, serta kesenian di Kabupaten Tegal yang dapat diakses di mana saja.
+                    </p>
+                </div>
+            </div>
+            <div class="content-1 content-3">
+                <img src="elemen/what-icon.png" class="img-atas">
+                <div class="value-1">
+                    <h2><span>Kenapa</span> KEKAL dibuat?</h2>
+                    <p>
+                        Pada awalnya, KEKAL dibuat karena masih banyak kasus anak yang malas membaca. Tau gak sih? berdasarkan data dari UNESCO, minat baca masyarakat Indonesia adala 0,001%. atau dari 1000 orang, hanya satu yang memiliki minat baca yang baik! Memprihatinkan banget ya. Oleh karena itu, kami membuat perpustakaan digital ini untuk meningkatkan pengetahuan tentang kearifan lokal Kabupaten Tegal.
+                    </p>
+                </div>
+                <img src="elemen/what-icon.png" class="img-bawah">
+            </div>
+            <div class="content-1">
+                <img src="elemen/next-icon.png">
+                <div class="value-1">
+                    <h2>Apa <span>Selanjutnya</span></h2>
+                    <p>
+                        Selanjutnya, kami akan terus berusaha untuk menarik minat pembaca diluar sana untuk mencoba dan membaca menggunakan website KEKAL ini.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--div class="banner-footer">
+            <div class="container-footer">
+                <div class="logo-sosmed-footer">
+                  <img src="elemen/Logo.png" alt="logo-image">
+                  <div class="sosmed-footer">
+                    <ul>
+                      <li><a href="#"><i data-feather="facebook"></i></a></li>
+                      <li><a href="#"><i data-feather="instagram"></i></a></li>
+                      <li><a href="#"><i data-feather="twitter"></i></a></li>
+                      <li><a href="#"><i data-feather="youtube"></i></a></li>   
+                    </ul>
+                  </div>
+                </div>
+                <div class="produk-footer">
+                  <h2>PRODUK</h2>
+                  <ul>
+                    <li>Buku Nonfiksi</li>
+                    <li>Buku Fiksi</li>
+                    <li>Majalah</li>
+                    <li>Berita</li>
+                  </ul>
+                </div>
+                <div class="sosial-media-footer">
+                  <h2>SOSIAL MEDIA</h2>
+                  <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+                </div>
+                <div class="ayo-maca-footer">
+                  <h2>AYO MACA</h2>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Goals</a></li>
+                    <li><a href="#">How to Use It?</a></li>
+                    <li><a href="#">Creators</a></li>
+                    <li><a href="#">Testimoni</li>
+                  </ul>
+                </div>
+            </div-->
+    </div>
+    <script>
+        feather.replace();
+    </script>
+
+      <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
