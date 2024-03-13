@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS links-->
+    <link rel="stylesheet" href="style-booklist.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Ayo Maca: Website Perpustakaan Digital</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <link rel="icon" href="../favicon (1).ico" type="image/x-icon">
+
+    <!--Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="banner">
+        <!--Navigation Bar-->
+         <div class="navbar">
+            <img src="elemen/logo.png" class="logo">
+            <ul>
+                <li><a href="1-home-page.html" class="home" style="color: #ffffff;">Home</a></li>
+                <li class="navbar-value"><a href="2-about-page.html">About</a></li>
+                <li class="navbar-value"><a href="3-creator-page.html">Creators</a></li>
+            </ul>
+        </div>
+
+        <!-- Mob Navbar -->
+        <nav class="mob-nav">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="#">Home</a></li>
+                <li><a href="2-about-page.html">About</a></li>
+                <li><a href="3-creator-page.html">Creators</a></li>
+              </div>
+            
+              <span style="font-size:30px;cursor:pointer;padding:1em;padding-top: 4em;color: aliceblue;" onclick="openNav()">&#9776; </span>          
+        </nav>
+        <!--<div class="search">
+            <div class="left-side">
+                <button class="kategori"><a href="#">Kategori</a></button>
+                <button class="booklist-value"><a href="#">Novel <i data-feather="chevron-down" class="down-icon"></i></a></button>
+            </div>
+            <div class="right-side">
+                <form action="#">
+                    <input type="text" class="search-book" placeholder="Masukkan Judul Buku...">
+                    <button><a href="#">Cari</a></button>
+                </form>
+            </div>
+        </div>-->
+        <div class="book">
+
+            <div class="book-card">
+                <img src="elemen/topeng-endel.jpeg">
+                <h1 class="book-title">Topeng Endel</h1>
+                <button><a href="../Kumpulan Kesenian/Topeng-Endel.html">Cek Detail</a></button>
+            </div>
+            <div class="book-card">
+                <img src="elemen/wayang.jpeg">
+                <h1 class="book-title">Wayang Santri</h1>
+                <button><a href="../Kumpulan Kesenian/Wayang-Santri.html">Cek Detail</a></button>
+            </div>
+            <div class="book-card">
+                <img src="elemen/beras-mawur.jpeg" style="height: 7em;">
+                <h1 class="book-title" >Motif Beras Mawur</h1>
+                <button><a href="../Kumpulan Kesenian/Motif-Beras-Mawur.html">Cek Detail</a></button>
+            </div>
+            <div class="book-card">
+                <img src="elemen/galawi.jpg" style="height: 7em;">
+                <h1 class="book-title">Lagu Galawi</h1>
+                <button><a href="../Kumpulan Kesenian/Galawi.html">Cek Detail</a></button>
+            </div>
+            <div class="book-card">
+                <img src="elemen/mantu-poci.jpeg" style="height: 7em;">
+                <h1 class="book-title">Tradisi Mantu Poci</h1>
+                <button><a href="../Kumpulan Kesenian/Mantu-Poci.html">Cek Detail</a></button>
+            </div>
+        </div>
+        <button class="kembali"><a href="../4-menu-page.html">Kembali</a></button>
+    </div>
+    <script>
+        feather.replace();
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    
+</body>
+</html>
