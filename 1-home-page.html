@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS links-->
+    <link rel="stylesheet" href="style-portal.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Ayo Maca: Website Perpustakaan Digital</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <link rel="icon" href="favicon (1).ico" type="image/x-icon">
+
+    <!--Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="banner">
+
+        <!--Navigation Bar-->
+        <div class="navbar">
+            <img src="elemen/Logo.png" class="logo">
+            <ul id="myLinks">
+                <a href="#" class="home" style="color: #ffffff; ">Home</a>
+                <li><a href="7-login-page.html">Login</a></li>
+                <li><a href="2-about-page.html">About</a></li>
+                <li><a href="3-creator-page.html">Creators</a></li>
+            </ul>
+        </div>
+
+        <!-- Mob Navbar -->
+        <nav class="mob-nav">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="#">Home</a></li>
+                <li><a href="7-login-page.html">Login</a></li>
+                <li><a href="2-about-page.html">About</a></li>
+                <li><a href="3-creator-page.html">Creators</a></li>
+              </div>
+            
+              <span style="font-size:30px;cursor:pointer;padding:1em;padding-top: 4em;color: aliceblue;" onclick="openNav()">&#9776; </span>          
+        </nav>
+        
+        <div class="content-wrapper">
+            <!--Content-->
+            <div class="logo-buku">
+                <img src="elemen/buku-home.png">
+            </div>
+
+            <div class="content">
+                <h1>Selamat Datang</h1>   
+                <p>KEKAL (Kenalan Karo Tegal) memberikan informasi mengenai cerita rakyat dan sejarah di Kabupaten Tegal</p>
+
+                <div class="button">
+                    <button type="button"><a href="7-login-page.html">Mulai</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="copyright">© Copyright by KEKAL</div>
+            <div class="icon-sosmed">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/kekal.ofc?igsh=YzQ5MnBpbzluejJr" target="_blank"><i data-feather="instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=6285225429005" target="_blank"><i data-feather="phone"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Icon Script-->
+    <script>
+        feather.replace();
+      </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
